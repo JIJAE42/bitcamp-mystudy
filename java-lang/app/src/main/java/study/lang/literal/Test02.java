@@ -7,8 +7,8 @@ public class Test02 {
     public static void main(String[] args) {
         // 코드를 완성하라.
         System.out.println(100); // 10진수
-        System.out.println(100); // 2진수
-        System.out.println(100); // 8진수
-        System.out.println(100); // 16진수
+        System.out.println(0b01100100); // 2진수
+        System.out.println(0144); // 8진수
+        System.out.println(0x64); // 16진수
     }
 }
