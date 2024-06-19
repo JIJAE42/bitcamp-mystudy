@@ -1,13 +1,21 @@
-public class ex1 {
+import java.util.Scanner;
 
+public class InputExample {
   public static void main(String[] args) {
-    if (args.length > 0) {
-      System.out.println("하나 이상이다");
-      for (int i = 0; args.length > i; i++) {
-        System.out.println(args[i]);
-      }
-    } else {
-      System.out.println("없다");
-    }
+    // Scanner 객체 생성
+    Scanner keyboardScanner = new Scanner(System.in);
+
+    // 문자열 입력 받기
+    System.out.print("이름을 입력하세요: ");
+    String name = keyboardScanner.nextLine();
+    System.out.println("입력된 이름: " + name);
+
+    // 정수 입력 받기
+    System.out.print("나이를 입력하세요: ");
+    int age = keyboardScanner.nextInt();
+    System.out.println("입력된 나이: " + age);
+
+    // Scanner 닫기
+    keyboardScanner.close();
   }
 }
