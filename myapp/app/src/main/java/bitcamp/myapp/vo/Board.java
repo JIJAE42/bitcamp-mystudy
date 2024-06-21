@@ -7,7 +7,7 @@ public class Board {
     private static int seqNo;
 
     private int no;
-    private String mainTitle;
+    private String title;
     private String content;
     private Date createdDate;
     private int viewCount;
@@ -24,12 +24,12 @@ public class Board {
         this.no = no;
     }
 
-    public String getMainTitle() {
-        return mainTitle;
+    public String getTitle() {
+        return title;
     }
 
-    public void setMainTitle(String mainTitle) {
-        this.mainTitle = mainTitle;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getContent() {

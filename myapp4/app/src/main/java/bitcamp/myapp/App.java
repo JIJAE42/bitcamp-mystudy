@@ -16,6 +16,10 @@ public class App {
             "종료",
     };
 
+    public static void main(String[] args) {
+        System.out.println();
+
+    }
     static String[] menus2 = new String[]{
             "등록",
             "목록",

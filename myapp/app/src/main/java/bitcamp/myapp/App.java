@@ -12,44 +12,19 @@ public class App {
             {"등록", "목록", "조회", "변경", "삭제"},
             {"등록", "목록", "조회", "변경", "삭제"},
             {"등록", "목록", "조회", "변경", "삭제"},
-            {"등록", "목록", "조회", "변경", "삭제"}
+            {"등록", "목록", "조회", "변경", "삭제"},
+            {}
     };
+
+    static UserCommand userCommand = new UserCommand();
+    static BoardCommand boardCommand = new BoardCommand();
+    static BoardCommand noticeCommand = new BoardCommand();
+    static ProjectCommand projectCommand = new ProjectCommand(userCommand.getUserList());
 
     public static void main(String[] args) {
 
-        printMenu(); // 메서드에 묶인 코드를 실행하는 것을 "메서드를 호출(call)한다"라고 부른다.
+        new App().execute();
 
-        String command;
-        while (true) {
-            try {
-                command = Prompt.input("메인>");
-
-                if (command.equals("menu")) {
-                    printMenu();
-
-                } else {
-                    int menuNo = Integer.parseInt(command);
-                    String menuTitle = getMenuTitle(menuNo, mainMenus); // 설명하는 변수
-                    if (menuTitle == null) {
-                        System.out.println("유효한 메뉴 번호가 아닙니다.");
-                    } else if (menuTitle.equals("종료")) {
-                        break;
-                    } else {
-                        if (menuNo >= 1 && menuNo <= 3) {
-                            processMenu(menuTitle, subMenus[menuNo - 1]);
-                        } else {
-                            System.out.println(menuTitle);
-                        }
-                    }
-                }
-            } catch (NumberFormatException ex) {
-                System.out.println("숫자로 메뉴 번호를 입력하세요.");
-            }
-        }
-
-        System.out.println("종료합니다.");
-
-        Prompt.close();
     }
 
     static void printMenu() {
@@ -91,6 +66,10 @@ public class App {
     }
 
     static void processMenu(String menuTitle, String[] menus) {
+        if (menuTitle.equals("도움말")) {
+            System.out.println("도움말입니다.");
+            return;
+        }
         printSubMenu(menuTitle, menus);
         while (true) {
             String command = Prompt.input(String.format("메인/%s>", menuTitle));
@@ -109,13 +88,16 @@ public class App {
                 } else {
                     switch (menuTitle) {
                         case "회원":
-                            UserCommand.executeUserCommand(subMenuTitle);
+                            userCommand.executeUserCommand(subMenuTitle);
                             break;
                         case "프로젝트":
-                            ProjectCommand.executeProjectCommand(subMenuTitle);
+                            projectCommand.executeProjectCommand(subMenuTitle);
                             break;
                         case "게시판":
-                            BoardCommand.executeBoardCommand(subMenuTitle);
+                            boardCommand.executeBoardCommand(subMenuTitle);
+                            break;
+                        case "공지사항":
+                            noticeCommand.executeBoardCommand(subMenuTitle);
                             break;
                         default:
                             System.out.printf("%s 메뉴의 명령을 처리할 수 없습니다.\n", menuTitle);
@@ -125,5 +107,39 @@ public class App {
                 System.out.println("숫자로 메뉴 번호를 입력하세요.");
             }
         }
+    }
+
+    void execute() {
+
+        printMenu(); // 메서드에 묶인 코드를 실행하는 것을 "메서드를 호출(call)한다"라고 부른다.
+
+        String command;
+        while (true) {
+            try {
+                command = Prompt.input("메인>");
+
+                if (command.equals("menu")) {
+                    printMenu();
+
+                } else {
+                    int menuNo = Integer.parseInt(command);
+                    String menuTitle = getMenuTitle(menuNo, mainMenus); // 설명하는 변수
+                    if (menuTitle == null) {
+                        System.out.println("유효한 메뉴 번호가 아닙니다.");
+                    } else if (menuTitle.equals("종료")) {
+                        break;
+                    } else {
+                        processMenu(menuTitle, subMenus[menuNo - 1]);
+                        System.out.println(menuTitle);
+                    }
+                }
+            } catch (NumberFormatException ex) {
+                System.out.println("숫자로 메뉴 번호를 입력하세요.");
+            }
+        }
+
+        System.out.println("종료합니다.");
+
+        Prompt.close();
     }
 }
