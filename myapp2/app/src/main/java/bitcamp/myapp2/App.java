@@ -1,13 +1,19 @@
 package bitcamp.myapp2;
 
-import java.nio.charset.Charset;
 
 public class App {
     public static void main(String[] args) {
-        System.out.println(Charset.defaultCharset());
-
-        byte[] bytes = {
-                (byte)0xb0, (byte)0xa1,
-        };
+        int age = 21;
+        if (age <= 7) {
+            System.out.println("미취학");
+        } else if (age <= 13) {
+            System.out.println("초등학생");
+        } else if (age <= 16) {
+            System.out.println("중학생");
+        } else if (age <= 19) {
+            System.out.println("고등학생");
+        } else {
+            System.out.println("성인");
+        }
     }
-    }
+}

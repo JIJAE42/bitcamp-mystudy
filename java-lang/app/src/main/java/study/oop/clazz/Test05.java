@@ -17,5 +17,4 @@ public class Test05 {
   static class Z extends X {
     void m3() {}
   }
-
 }

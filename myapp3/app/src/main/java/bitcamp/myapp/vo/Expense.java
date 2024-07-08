@@ -4,22 +4,22 @@ import bitcamp.myapp.util.ArrayList;
 
 import java.util.Objects;
 
-public class Project {
+public class Expense {
 
     private static int seqNo;
 
     private int no;
     private String title;
     private String description;
-    private String startDate;
+    private String transactionDate;
     private String endDate;
     private ArrayList members = new ArrayList();
 
-    public Project() {
+    public Expense() {
 
     }
 
-    public Project(int no) {
+    public Expense(int no) {
         this.no = no;
     }
 
@@ -35,8 +35,8 @@ public class Project {
         if (o == null || getClass() != o.getClass()) {
             return false;
         }
-        Project project = (Project) o;
-        return no == project.no;
+        Expense expense = (Expense) o;
+        return no == expense.no;
     }
 
     @Override
@@ -68,12 +68,12 @@ public class Project {
         this.description = description;
     }
 
-    public String getStartDate() {
-        return startDate;
+    public String getTransactionDate() {
+        return transactionDate;
     }
 
-    public void setStartDate(String startDate) {
-        this.startDate = startDate;
+    public void setTransactionDate(String transactionDate) {
+        this.transactionDate = transactionDate;
     }
 
     public String getEndDate() {
@@ -88,4 +88,3 @@ public class Project {
         return members;
     }
 }
-
