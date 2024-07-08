@@ -1,66 +1,143 @@
 package bitcamp.myapp;
 
-public class App {
-    public static void main(String[] args) {
-        java.util.Scanner keyboardScanner = new java.util.Scanner(System.in);
+import bitcamp.myapp.command.StatementCommand;
+import bitcamp.myapp.command.ExpencsCommand;
+import bitcamp.myapp.command.ImportCommand;
+import bitcamp.myapp.util.Prompt;
 
+public class App {
+
+
+    String[] mainMenus = new String[]{"수입", "지출", "내역서", "메모장", "도움말", "종료"};
+    String[][] subMenus = {
+            {"등록", "목록", "조회", "변경", "삭제"},
+            {"등록", "목록", "조회", "변경", "삭제"},
+            {"등록", "목록", "조회", "변경", "삭제"},
+            {"등록", "목록", "조회", "변경", "삭제"},
+            {}
+    };
+
+    ImportCommand importCommand = new ImportCommand();
+    StatementCommand statementCommand = new StatementCommand();
+    StatementCommand noticeCommand = new StatementCommand();
+    ExpencsCommand expencsCommand = new ExpencsCommand(importCommand.getUserList());
+
+
+    public static void main(String[] args) {
+        new App().execute();
+    }
+
+    void execute() {
+        printMenu();
+
+        String command;
+        while (true) {
+            try {
+                command = Prompt.input("메인>");
+
+                if (command.equals("menu")) {
+                    printMenu();
+
+                } else {
+                    int menuNo = Integer.parseInt(command);
+                    String menuTitle = getMenuTitle(menuNo, mainMenus); // 설명하는 변수
+                    if (menuTitle == null) {
+                        System.out.println("유효한 메뉴 번호가 아닙니다.");
+                    } else if (menuTitle.equals("종료")) {
+                        break;
+                    } else {
+                        processMenu(menuTitle, subMenus[menuNo - 1]);
+                    }
+                }
+            } catch (NumberFormatException ex) {
+                System.out.println("숫자로 메뉴 번호를 입력하세요.");
+            }
+        }
+
+        System.out.println("종료합니다.");
+
+        Prompt.close();
+    }
+
+    void printMenu() {
         String boldAnsi = "\033[1m";
         String redAnsi = "\033[31m";
         String resetAnsi = "\033[0m";
 
-        String appTitle = "[토끼에 대해 알려주세요!]";
+        String appTitle = "[가계부]";
         String line = "----------------------------------";
-        String menu1 = "1. 이름은?";
-        String menu2 = "2. 나이는?";
-        String menu3 = "3. 예뻐요?";
-        String menu4 = "4. 누구꺼죠?";
-        String menu5 = "5. 오우";
-        String menu6 = "6. 끝!";
 
         System.out.println(boldAnsi + line + resetAnsi);
         System.out.println(boldAnsi + appTitle + resetAnsi);
-        System.out.println(menu1);
-        System.out.println(menu2);
-        System.out.println(menu3);
-        System.out.println(menu4);
-        System.out.println(menu5);
-        System.out.println(boldAnsi + redAnsi + menu6 + resetAnsi);
+
+        for (int i = 0; i < mainMenus.length; i++) {
+            if (mainMenus[i].equals("종료")) {
+                System.out.printf("%s%d. %s%s\n", (boldAnsi + redAnsi), (i + 1), mainMenus[i], resetAnsi);
+            } else {
+                System.out.printf("%d. %s\n", (i + 1), mainMenus[i]);
+            }
+        }
+
         System.out.println(boldAnsi + line + resetAnsi);
+    }
 
-        int menuNo;
-        do {
-            System.out.print("> ");
-            menuNo = keyboardScanner.nextInt();
+    void printSubMenu(String menuTitle, String[] menus) {
+        System.out.printf("[%s]\n", menuTitle);
+        for (int i = 0; i < menus.length; i++) {
+            System.out.printf("%d. %s\n", (i + 1), menus[i]);
+        }
+        System.out.println("9. 이전");
+    }
 
-            switch (menuNo) {
-                case 1:
-                    System.out.println("토지혜");
-                    break;
-                case 2:
-                    System.out.println("아기♥");
-                    break;
-                case 3:
-                    System.out.println("세상에서 제일 예뻐요. 완벽!");
-                    break;
-                case 4:
-                    System.out.println("아지껍니다! 건들지 마세요! 물거예요!");
-                    break;
-                case 5:
-                    System.out.println("우오아아아아아 신난다~ ㅎㅎ");
-                    break;
-                case 6:
-                    System.out.println("용용이 끝끝.");
-                    break;
-                default:
-                    System.out.println("번호를 제대로 선택해야 되요!.");
-                    break;
+    boolean isValidateMenu(int menuNo, String[] menus) {
+        return menuNo >= 1 && menuNo <= menus.length;
+    }
+
+    String getMenuTitle(int menuNo, String[] menus) {
+        return isValidateMenu(menuNo, menus) ? menus[menuNo - 1] : null;
+    }
+
+    void processMenu(String menuTitle, String[] menus) {
+        if (menuTitle.equals("도움말")) {
+            System.out.println("도움말입니다.");
+            return;
+        }
+        printSubMenu(menuTitle, menus);
+        while (true) {
+            String command = Prompt.input(String.format("메인/%s>", menuTitle));
+            if (command.equals("menu")) {
+                printSubMenu(menuTitle, menus);
+                continue;
+            } else if (command.equals("9")) { // 이전 메뉴 선택
+                break;
             }
 
-        } while (menuNo != 6);
-
-        // 사용을 완료한 자원은 반환해야 다른 프로세스(프로그램)이 사용할 수 있다.
-        // 단, JVM을 종료하면 JVM이 사용한 모든 자원은 강제 회수된다.
-        // OS가 강제 회수한다.
-        keyboardScanner.close();
+            try {
+                int menuNo = Integer.parseInt(command);
+                String subMenuTitle = getMenuTitle(menuNo, menus);
+                if (subMenuTitle == null) {
+                    System.out.println("유효한 메뉴 번호가 아닙니다.");
+                } else {
+                    switch (menuTitle) {
+                        case "수입":
+                            importCommand.executeUserCommand(subMenuTitle);
+                            break;
+                        case "지출":
+                            expencsCommand.executeProjectCommand(subMenuTitle);
+                            break;
+                        case "총계":
+                            statementCommand.executeBoardCommand(subMenuTitle);
+                            break;
+                        case "메모장":
+                            noticeCommand.executeBoardCommand(subMenuTitle);
+                            break;
+                        default:
+                            System.out.printf("%s 메뉴의 명령을 처리할 수 없습니다.\n", menuTitle);
+                    }
+                }
+            } catch (NumberFormatException ex) {
+                System.out.println("숫자로 메뉴 번호를 입력하세요.");
+            }
+        }
     }
 }
