@@ -39,7 +39,7 @@ public abstract class AbstractCommand implements Command {
             }
         }
     }
-
+    
     private void printMenus() {
         String[] menus = getMenus();
         System.out.printf("[%s]\n", menuTitle);

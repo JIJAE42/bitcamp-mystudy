@@ -1,5 +1,5 @@
 package study.uml;
 
-public class Truck {
-
+public class Truck extends Car{
+  public Trc
 }
