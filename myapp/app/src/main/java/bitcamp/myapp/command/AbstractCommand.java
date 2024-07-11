@@ -1,19 +1,19 @@
 package bitcamp.myapp.command;
 
 import bitcamp.myapp.util.Prompt;
-import bitcamp.myapp.util.Stack;
+
+import java.util.Stack;
 
 public abstract class AbstractCommand implements Command {
 
     protected String menuTitle;
-
 
     public AbstractCommand(String menuTitle) {
         this.menuTitle = menuTitle;
     }
 
     @Override
-    public void execute(Stack menuPath) {
+    public void execute(Stack<String> menuPath) {
         menuPath.push(menuTitle);
 
         printMenus();
@@ -78,6 +78,4 @@ public abstract class AbstractCommand implements Command {
     protected abstract String[] getMenus();
 
     protected abstract void processMenu(String menuName);
-
-
 }
