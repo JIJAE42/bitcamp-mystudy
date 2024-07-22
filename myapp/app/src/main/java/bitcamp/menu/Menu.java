@@ -2,7 +2,7 @@ package bitcamp.menu;
 
 public interface Menu {
 
-    String getTitle();
+  String getTitle();
 
-    void execute();
+  void execute();
 }
