@@ -4,11 +4,13 @@ import bitcamp.myapp.command.Command;
 import bitcamp.myapp.vo.Project;
 import bitcamp.myapp.vo.User;
 import bitcamp.util.Prompt;
+import java.util.Iterator;
 import java.util.List;
 
 public class ProjectViewCommand implements Command {
 
   private List<Project> projectList;
+
 
   public ProjectViewCommand(List<Project> projectList) {
     this.projectList = projectList;
@@ -17,6 +19,7 @@ public class ProjectViewCommand implements Command {
   @Override
   public void execute(String menuName) {
     System.out.printf("[%s]\n", menuName);
+
     int projectNo = Prompt.inputInt("프로젝트 번호?");
     int index = projectList.indexOf(new Project(projectNo));
     if (index == -1) {
@@ -29,10 +32,12 @@ public class ProjectViewCommand implements Command {
     System.out.printf("프로젝트명: %s\n", project.getTitle());
     System.out.printf("설명: %s\n", project.getDescription());
     System.out.printf("기간: %s ~ %s\n", project.getStartDate(), project.getEndDate());
-
     System.out.println("팀원:");
-    for (User user : project.getMembers()) {
+    Iterator<User> memberIterator = project.getMembers().iterator();
+    while (memberIterator.hasNext()) {
+      User user = memberIterator.next();
       System.out.printf("- %s\n", user.getName());
     }
   }
+
 }

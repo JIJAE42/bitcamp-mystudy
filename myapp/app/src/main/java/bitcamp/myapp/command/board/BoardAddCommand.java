@@ -10,9 +10,11 @@ public class BoardAddCommand implements Command {
 
   private List<Board> boardList;
 
+
   public BoardAddCommand(List<Board> list) {
     this.boardList = list;
   }
+
 
   @Override
   public void execute(String menuName) {

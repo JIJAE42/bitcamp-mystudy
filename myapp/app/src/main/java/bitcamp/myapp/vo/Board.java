@@ -25,6 +25,7 @@ public class Board implements Serializable, SequenceNo {
     return ++seqNo;
   }
 
+
   public static void initSeqNo(int no) {
     seqNo = no;
   }
@@ -34,7 +35,7 @@ public class Board implements Serializable, SequenceNo {
   }
 
   public static Board valueOf(String csv) {
-    String[] values = csv.split(",");
+    String[] values = csv.split(","); //csv :"1. 홍길동, hong@test.com. 010-1111-2222"
     Board board = new Board();
     board.setNo(Integer.parseInt(values[0]));
     board.setTitle(values[1]);
@@ -44,26 +45,15 @@ public class Board implements Serializable, SequenceNo {
     return board;
   }
 
+
   public String toCsvString() {
     return new StringBuilder()
-        .append(no).append(",")
-        .append(title).append(",")
+        .append(no).append(",").append(title).append(",")
         .append(content).append(",")
         .append(createdDate.getTime()).append(",")
-        .append(viewCount)
-        .toString();
+        .append(viewCount).toString();
   }
 
-  @Override
-  public String toString() {
-    return "Board{" +
-        "no=" + no +
-        ", title='" + title + '\'' +
-        ", content='" + content + '\'' +
-        ", createdDate=" + createdDate +
-        ", viewCount=" + viewCount +
-        '}';
-  }
 
   @Override
   public boolean equals(Object o) {

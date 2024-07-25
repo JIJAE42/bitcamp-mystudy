@@ -10,6 +10,7 @@ public class ProjectUpdateCommand implements Command {
   private List<Project> projectList;
   private ProjectMemberHandler memberHandler;
 
+
   public ProjectUpdateCommand(List<Project> projectList, ProjectMemberHandler memberHandler) {
     this.projectList = projectList;
     this.memberHandler = memberHandler;
@@ -18,6 +19,7 @@ public class ProjectUpdateCommand implements Command {
   @Override
   public void execute(String menuName) {
     System.out.printf("[%s]\n", menuName);
+
     int projectNo = Prompt.inputInt("프로젝트 번호?");
     int index = projectList.indexOf(new Project(projectNo));
     if (index == -1) {
@@ -38,5 +40,6 @@ public class ProjectUpdateCommand implements Command {
 
     System.out.println("변경 했습니다.");
   }
+
 
 }

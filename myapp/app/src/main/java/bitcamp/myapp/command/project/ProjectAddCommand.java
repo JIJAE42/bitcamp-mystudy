@@ -10,6 +10,7 @@ public class ProjectAddCommand implements Command {
   private List<Project> projectList;
   private ProjectMemberHandler memberHandler;
 
+
   public ProjectAddCommand(List<Project> projectList, ProjectMemberHandler memberHandler) {
     this.projectList = projectList;
     this.memberHandler = memberHandler;
@@ -34,4 +35,5 @@ public class ProjectAddCommand implements Command {
 
     System.out.println("등록했습니다.");
   }
+
 }

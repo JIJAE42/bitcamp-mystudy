@@ -41,7 +41,7 @@ public class Project implements Serializable, SequenceNo {
 
   public static Project valueOf(String csv) {
     String[] values = csv.split(",");
-
+    //csv :"1. 홍길동, hong@test.com. 010-1111-2222"
     Project project = new Project();
     project.setNo(Integer.parseInt(values[0]));
     project.setTitle(values[1]);
@@ -59,10 +59,11 @@ public class Project implements Serializable, SequenceNo {
       user.setPassword(items[3]);
       user.setTel(items[4]);
       project.getMembers().add(user);
-    }
 
+    }
     return project;
   }
+
 
   public String toCsvString() {
 
@@ -105,7 +106,7 @@ public class Project implements Serializable, SequenceNo {
   public int getNo() {
     return no;
   }
-  
+
   public void setNo(int no) {
     this.no = no;
   }

@@ -9,13 +9,16 @@ public class BoardDeleteCommand implements Command {
 
   private List<Board> boardList;
 
+
   public BoardDeleteCommand(List<Board> list) {
     this.boardList = list;
   }
 
+
   @Override
   public void execute(String menuName) {
     System.out.printf("[%s]\n", menuName);
+
     int boardNo = Prompt.inputInt("게시글 번호?");
     int index = boardList.indexOf(new Board(boardNo));
     if (index == -1) {

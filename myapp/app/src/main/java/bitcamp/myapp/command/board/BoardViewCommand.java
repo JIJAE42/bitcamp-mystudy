@@ -9,13 +9,16 @@ public class BoardViewCommand implements Command {
 
   private List<Board> boardList;
 
+
   public BoardViewCommand(List<Board> list) {
     this.boardList = list;
   }
 
+
   @Override
   public void execute(String menuName) {
     System.out.printf("[%s]\n", menuName);
+    
     int boardNo = Prompt.inputInt("게시글 번호?");
     int index = boardList.indexOf(new Board(boardNo));
     if (index == -1) {
@@ -31,4 +34,6 @@ public class BoardViewCommand implements Command {
     System.out.printf("작성일: %1$tY-%1$tm-%1$td %1$tH:%1$tM:%1$tS\n", board.getCreatedDate());
     System.out.printf("조회수: %d\n", board.getViewCount());
   }
+
+
 }

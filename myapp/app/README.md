@@ -1,42 +1,49 @@
-# 23. 특정 클래스에서만 사용되는 의존 객체는 중첩 클래스로 정의하기
+# 07. 문자열 비교와 데이터 변환 다루기
 
 ## 학습목표
 
-- 중첩 클래스의 구동 원리를 이해하고 사용할 수 있다.
+- String.equals() 메서드를 활용할 수 있다.
+- Integer.parseInt() 메서드를 활용할 수 있다.
+- Scanner의 nextInt(), next(), nextLine()을 구분하여 사용할 수 있다.
 
-## 요구사항
+## 요구사항 
 
-- 특정 클래스에서만 사용되는 클래스가 있다면 중첩 클래스로 코드를 정리하기
+- 'menu' 명령을 입력하면 메뉴 목록을 출력
 
 ## 실행 결과
 
-- 이전과 같다.
+```
+----------------------------------------------  
+[팀 프로젝트 관리 시스템]  
+
+1. 회원
+2. 팀
+3. 프로젝트
+4. 게시판
+5. 도움말
+6. 종료  
+----------------------------------------------  
+> menu
+----------------------------------------------  
+[팀 프로젝트 관리 시스템]  
+
+1. 회원
+2. 팀
+3. 프로젝트
+4. 게시판
+5. 도움말
+6. 종료  
+----------------------------------------------
+```
 
 ## 작업
 
-### Node 클래스를 중첩 클래스로 전환
+- 1) 사용자 입력을 nextLine()을 사용하여 줄 단위로 처리한다.
+- 2) "menu" 명령을 처리한다.
+- 3) 그 외 명령은 정수 값으로 변환하여 처리한다.
+- 4) nextInt() 대신 nextLine() 사용에 맞춰 예외처리를 변경한다.
 
-- LinkedList 클래스 변경
-  - Node 클래스를 LinkedList의 static nested class 로 옮긴다.
-  
-### ListIterator 클래스를 중첩 클래스로 전환
-
-- AbstractList 클래스 변경
-  - ListIterator 클래스를 이 클래스의 static nested class로 옮긴다.
-    - AbstractList01 클래스 참고
-  - ListIterator 클래스를 non-static nested class로 변경한다.
-    - AbstractList02 클래스 참고
-  - ListIterator 클래스를 local class로 변경한다.
-    - AbstractList03 클래스 참고
-  - ListIterator 클래스를 anonymous class로 변경한다.
-    - AbstractList 클래스 참고
-    
 ## 소스 파일
 
-- Node.java (삭제)
-- LinkedList.java
-- ListIterator.java(삭제)
-- AbstractList.java
-  - AbstractList01.java
-  - AbstractList02.java
-  - AbstractList03.java
+- App.java
+

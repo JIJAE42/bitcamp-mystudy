@@ -4,6 +4,7 @@ import bitcamp.myapp.command.Command;
 
 public class MenuItem extends AbstractMenu {
 
+
   Command command;
 
   public MenuItem(String title) {
