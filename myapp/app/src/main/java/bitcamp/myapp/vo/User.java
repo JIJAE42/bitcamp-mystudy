@@ -3,10 +3,9 @@ package bitcamp.myapp.vo;
 import java.io.Serializable;
 import java.util.Objects;
 
+public class User implements Serializable {
 
-public class User implements Serializable, SequenceNo {
-
-  private static int seqNo;
+  private static final long serialVersionUID = 1L;
 
   private int no;
   private String name;
@@ -21,47 +20,15 @@ public class User implements Serializable, SequenceNo {
     this.no = no;
   }
 
-  public static int getNextSeqNo() {
-    return ++seqNo;
-  }
-
-  public static void initSeqNo(int no) {
-    seqNo = no;
-  }
-
-  public static int getSeqNo() {
-    return seqNo;
-  }
-
-  public static User valueOf(String csv) {
-    String[] values = csv.split(","); //csv :"1. 홍길동, hong@test.com. 010-1111-2222"
-    User user = new User();
-    user.setNo(Integer.parseInt(values[0]));
-    user.setName(values[1]);
-    user.setEmail(values[2]);
-    user.setPassword(values[3]);
-    user.setTel(values[4]);
-    return user;
-  }
-
-
-  public String toCsvString() {
-    return new StringBuilder()
-        .append(no).append(",").append(name).append(",")
-        .append(email).append(",")
-        .append(password).append(",")
-        .append(tel).toString();
-  }
-
   @Override
   public String toString() {
     return "User{" +
-        "tel='" + tel + '\'' +
-        ", no=" + no +
-        ", name='" + name + '\'' +
-        ", email='" + email + '\'' +
-        ", password='" + password + '\'' +
-        '}';
+            "no=" + no +
+            ", name='" + name + '\'' +
+            ", email='" + email + '\'' +
+            ", password='" + password + '\'' +
+            ", tel='" + tel + '\'' +
+            '}';
   }
 
   @Override
@@ -81,7 +48,6 @@ public class User implements Serializable, SequenceNo {
     return Objects.hashCode(no);
   }
 
-  @Override
   public int getNo() {
     return no;
   }
