@@ -2,17 +2,20 @@ package bitcamp.myapp.command.board;
 
 import bitcamp.myapp.command.Command;
 import bitcamp.myapp.vo.Board;
+import bitcamp.myapp.vo.User;
 import bitcamp.util.Prompt;
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 public class BoardAddCommand implements Command {
 
-  private List<Board> boardList;
+  private Map<Integer, Board> boardMap;
+  private List<Integer> boardNoList;
 
-
-  public BoardAddCommand(List<Board> list) {
-    this.boardList = list;
+  public BoardAddCommand(Map<Integer, Board> boardMap, List<Integer> boardNoList) {
+    this.boardMap = boardMap;
+    this.boardNoList = boardNoList;
   }
 
 
@@ -24,7 +27,8 @@ public class BoardAddCommand implements Command {
     board.setContent(Prompt.input("내용?"));
     board.setCreatedDate(new Date());
     board.setNo(Board.getNextSeqNo());
-    boardList.add(board);
+    boardMap.put(board.getNo(), board);
+    boardNoList.add(board.getNo());
   }
 
 }
