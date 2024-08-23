@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c8b87a5b-7d8d-4183-a9ab-e75efad8ad47" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/../myapp/app-client/src/main/java/bitcamp/util/Prompt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myapp/app-client/src/main/resources/config/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myapp/app-client/src/main/resources/config/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myapp/app-client/src/main/resources/mappers/BoardDaoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myapp/app-client/src/main/resources/mappers/ProjectDaoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myapp/app-client/src/main/resources/mappers/UserDaoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myapp/app-server/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myapp/app-server/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myapp/app-server/docs/data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myapp/app-server/docs/ddl.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myapp/app-server/src/main/java/bitcamp/myapp/ServerApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myapp/app-server/src/main/java/bitcamp/myapp/command/board/BoardDeleteCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myapp/app-server/src/main/java/bitcamp/myapp/command/project/ProjectAddCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myapp/app-server/src/main/java/bitcamp/myapp/command/project/ProjectMemberHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myapp/app-server/src/main/java/bitcamp/myapp/command/project/ProjectUpdateCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myapp/app-server/src/main/java/bitcamp/myapp/command/project/ProjectViewCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myapp/app-server/src/main/java/bitcamp/myapp/dao/BoardDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myapp/app-server/src/main/java/bitcamp/myapp/dao/DaoFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myapp/app-server/src/main/java/bitcamp/myapp/dao/Param.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myapp/app-server/src/main/java/bitcamp/myapp/dao/ProjectDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myapp/app-server/src/main/java/bitcamp/myapp/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myapp/app-server/src/main/java/bitcamp/myapp/listener/InitApplicationListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myapp/app-server/src/main/java/bitcamp/myapp/vo/Project.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myapp/app-server/src/main/java/bitcamp/myapp/vo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myapp/app-server/src/main/resources/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myapp/app-server/src/main/resources/config/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myapp/app-server/src/main/resources/config/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myapp/app-server/src/main/resources/mappers/BoardDaoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myapp/app-server/src/main/resources/mappers/ProjectDaoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myapp/app-server/src/main/resources/mappers/UserDaoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myapp/app-server/src/test/java/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../myapp/app-server/src/test/resources/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/bitcamp/myapp/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/libs.versions.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../java-lang/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/Hello.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../java-lang/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/doc/modeling/ddl.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/doc/modeling/model.exerd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/doc/modeling/model01.exerd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/doc/modeling/model02.exerd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/doc/modeling/model04-1.exerd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/doc/modeling/model04-2.exerd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/doc/modeling/model06.exerd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/doc/modeling/model07.exerd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/doc/modeling/model08.exerd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/doc/modeling/model09.exerd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/doc/modeling/model10.exerd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/doc/modeling/model11.exerd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/doc/modeling/model12.exerd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/doc/modeling/model21.exerd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/doc/modeling/model22.exerd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/doc/modeling/model23.exerd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/doc/modeling/model24.exerd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/eclipse-java-google-style.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/hello.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/hello.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/hello2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/jdbc-driver.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/label-en_US.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/label-ko_KR.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/module.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/photo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-lang/app/src/main/java/Hello.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/Hello2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-lang/app/src/main/java/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/Test4.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-lang/app/src/main/java/Test4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex01/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex01/Receiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex01/Sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex01/Sender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex01/Sender2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex01/Sender2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex01/Sender4.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex01/Sender4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex01/Sender5.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex01/Sender5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex02/Client0310.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex02/Client0310.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex02/Server0220.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex02/Server0220.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex02/Server0310.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex02/Server0310.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex03/Client0110.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex03/Client0110.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex03/Server0110.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex03/Server0110.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex03/Server0111.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex03/Server0111.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex04/Client0110.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex04/Client0110.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex04/Client0210.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex04/Client0210.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex04/stateful/CalcServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex04/stateful/CalcServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex04/stateful2/CalcServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex04/stateful2/CalcServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex04/stateful3/CalcClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex04/stateful3/CalcClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex04/stateless2/CalcClient2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex04/stateless2/CalcClient2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex04/stateless3/CalcClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex04/stateless3/CalcClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex08/Exam0110.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex08/Exam0210.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex10/Exam0110.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex10/Exam0120.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex11/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex11/step01/CalculatorClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex11/step01/CalculatorServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex11/step02/CalculatorClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex11/step02/CalculatorServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex11/step03/CalculatorClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex11/step03/CalculatorServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex11/step04/CalculatorClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex11/step04/CalculatorServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex11/step05/CalculatorClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex11/step05/CalculatorServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex11/step06/CalculatorClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex11/step06/CalculatorServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex11/step07/CalculatorClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex11/step07/CalculatorServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex11/step08/CalculatorClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex11/step08/CalculatorServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex11/step09/CalculatorClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex11/step09/CalculatorServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex11/step09/RequestProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex11/step10/CalculatorClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex11/step10/CalculatorServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex11/step10/RequestProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex11/step11/CalculatorClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex11/step11/CalculatorServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex11/step11/RequestProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex11/step12/CalculatorClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex11/step12/CalculatorServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex11/step12/RequestProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex11/step13/CalculatorServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex11/step13/RequestProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex11/step13/StringTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex11/test/CalculatorClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex11/test/CalculatorServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex12/ChatServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex12/awt/ChatClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex12/swing/ChatClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/com/eomcs/net/ex13/step01/MiniHttpServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/concurrent/Test01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/concurrent/Test02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/concurrent/test01.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/concurrent/test2.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex01/Exam0110.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex01/Exam0120.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex01/Exam0130.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex01/Exam0210.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex01/Exam0220.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex01/Exam0310.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex01/Exam0320.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex01/Exam0321.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex01/Exam0322.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex01/Exam0330.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex01/Exam0410.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex01/Exam0411.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex01/Exam0420.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex01/Exam0430.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex01/Exam0431.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex01/Exam0510.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex01/Exam0520.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex01/Exam0610.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex01/Exam0611.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex01/Exam0620.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex01/Exam0630.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex01/Exam0640.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex01/Exam0650.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex01/Exam0651.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex01/Exam0660.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex01/Exam0710.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex01/Exam0710_01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex01/Exam0710_02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex01/Exam0710_03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex01/Exam0710_04.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex01/Exam0710_05.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex01/Exam0710_06.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex01/Exam0710_07.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex01/Exam0710_08.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex01/Exam0720.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex01/Exam0720_01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex01/Exam0720_02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex01/Exam0720_03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex01/Exam0720_04.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex01/Exam0730.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex01/Exam0731.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex01/Exam0732.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex10/Exam0110.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex10/Exam0120.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex10/Exam0210.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex10/Member.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex11/a/Exam0110.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex11/a/Exam0120.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex11/a/Member.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex11/b/Exam0210.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex11/b/Exam0220.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex11/b/Exam0230.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex11/b/Exam0231.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex11/b/Exam0232.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex11/b/Member.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex11/c/Exam0310.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex11/c/Exam0320.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex11/c/Member.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex11/d/Exam0410.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex11/d/Exam0420.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex11/d/Member.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex11/e/Exam0510.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex11/e/Exam0520.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex11/e/Score.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex14/Exam0110.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex14/Exam0120.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex14/Exam0130.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex14/Exam0210.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex14/Exam0220.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex14/Exam0230.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex15/Exam0110.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex15/Exam0120.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex2/Exam0110.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex2/Exam0120.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex2/Exam0130.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex2/Exam0210.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex2/Exam0220.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex2/Exam0310.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex2/Exam0320.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex2/Exam0410.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex2/Exam0420.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex3/Exam0110.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex3/Exam0111.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex3/Exam0112.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex3/Exam0120.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex3/Exam0121.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex3/Exam0122.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex3/Exam0123.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex3/Exam0130.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex3/Exam0210.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex3/Exam0220.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex3/Exam0221.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex3/Exam0310.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex3/Exam0320.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex3/Exam0410.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex3/Exam0420.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex3/Exam0430.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex4/Exam0110.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex4/Exam0120.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex4/Exam0210.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex4/Exam0220.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex4/Exam0310.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex4/Exam0320.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex4/Exam0410.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex4/Exam0420.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex4/Exam0510.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex4/Exam0520.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex5/DataFileInputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex5/DataFileOutputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex5/Exam0110.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex5/Exam0120.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex5/Exam0210.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex5/Exam0220.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex5/Member.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex6/BufferedFileInputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex6/BufferedFileOutputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex6/Exam0110.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex6/Exam0120.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex6/Exam0130.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex6/Exam0210.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex6/Exam0220.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex6/Exam0230.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex6/Exam0310.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex6/Exam0320.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex6/Exam0330.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex7/BufferedFileInputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex7/BufferedFileOutputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex7/DataBufferedFileInputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex7/DataBufferedFileOutputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex7/DataByteArrayInputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex7/DataFileInputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex7/DataFileOutputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex7/Exam0110.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex7/Exam0120.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex7/Exam0210.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex7/Exam0220.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex7/Exam0310.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex7/Exam0320.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex7/Exam0330.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/io/ex7/Member.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/lang/method/Test01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/lang/method/Test02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/lang/method/Test03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/lang/method/Test04.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/lang/method/Test05.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/lang/method/Test06.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/lang/method/Test07.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/lang/method/Test08.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/lang/method/Test09.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/lang/method/Test10.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/lang/operator/Test01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/lang/operator/Test02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/lang/operator/Test03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/lang/operator/Test04.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/lang/string/Test01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/lang/string/Test02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/lang/string/Test03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/lang/variavle/Test01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/lang/variavle/Test02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/lang/variavle/Test03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/lang/variavle/Test04.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/library/apache_poi/Test01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/library/apache_poi/Test02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/library/apache_poi/Test03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/library/apache_poi/Test11.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/oop/clazz/Calculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/oop/clazz/Test01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/oop/clazz/Test02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/oop/clazz/Test03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/oop/clazz/Test05.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/oop/clazz/vo/Score.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/oop/lambda/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/oop/lambda/Test01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/oop/lambda/Test02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/oop/lambda/Test03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/oop/lambda/Test04.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/oop/lambda/Test05.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/oop/nested/Test01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex01/Test01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex01/Test02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex01/Test03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex01/Test04.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex01/Test05.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex01/Test06.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex01/step1/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex01/step1/Sedan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex01/step2/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex01/step2/Sedan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex01/step3/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex01/step3/CarFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex01/step3/K7Factory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex01/step3/Sedan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex01/step3/SonataFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex01/step4/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex01/step4/CarFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex01/step4/K7Factory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex01/step4/Sedan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex01/step4/SonataFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex01/step5/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex01/step5/CarFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex01/step5/K7Factory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex01/step5/Sedan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex01/step5/SonataFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex01/step6/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex01/step6/CarFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex01/step6/K7Factory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex01/step6/Sedan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex01/step6/SonataFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex02/after1/Printer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex02/after1/Printer2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex02/after1/Printer3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex02/after1/Printer4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex02/after1/Printer5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex02/after1/Printer6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex02/after1/Test01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex02/after1/Test02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex02/after1/Test03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex02/after1/Test04.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex02/after1/Test05.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex02/after1/Test06.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex02/after2/ContentPrinter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex02/after2/FooterPrinter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex02/after2/HeaderPrinter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex02/after2/Printer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex02/after2/PrinterDecorator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex02/after2/SignPrinter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex02/after2/Test01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex02/after2/Test02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex02/after2/Test03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex02/after2/Test04.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex02/after2/Test05.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex02/after2/Test06.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex02/after2/Test07.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex02/before/Printer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex02/before/Printer2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex02/before/Printer3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex02/before/Printer4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex02/before/Printer5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex02/before/Printer6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex02/before/Test01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex02/before/Test02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex02/before/Test03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex02/before/Test04.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex02/before/Test05.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/java/study/patterns/ex02/before/Test06.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/resources/META-INF/services/java.sql.Driver" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/resources/README-resources.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/resources/com/eomcs/test2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/main/resources/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/test/java/README-test.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/src/test/resources/README-test-resources.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/temp2/b/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/test/message-enUS.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/test/message-koKR.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/test/test.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/test/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/test/test_default.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/test/test_unicode.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/test/test_utf8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/test6.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/webroot/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/webroot/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/app/welcome.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/buildSrc/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/buildSrc/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/buildSrc/src/main/groovy/buildlogic.java-application-conventions.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/buildSrc/src/main/groovy/buildlogic.java-common-conventions.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/buildSrc/src/main/groovy/buildlogic.java-library-conventions.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/docs/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../java-lang/docs/allclasses-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/docs/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../java-lang/docs/allpackages-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/docs/com/eomcs/lang/ex02/Exam0100.html" beforeDir="false" afterPath="$PROJECT_DIR$/../java-lang/docs/com/eomcs/lang/ex02/Exam0100.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/docs/com/eomcs/lang/ex02/Exam0200.html" beforeDir="false" afterPath="$PROJECT_DIR$/../java-lang/docs/com/eomcs/lang/ex02/Exam0200.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/docs/com/eomcs/lang/ex02/Exam0300.html" beforeDir="false" afterPath="$PROJECT_DIR$/../java-lang/docs/com/eomcs/lang/ex02/Exam0300.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/docs/com/eomcs/lang/ex02/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/../java-lang/docs/com/eomcs/lang/ex02/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/docs/com/eomcs/lang/ex02/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../java-lang/docs/com/eomcs/lang/ex02/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/docs/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/../java-lang/docs/help-doc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/docs/index-all.html" beforeDir="false" afterPath="$PROJECT_DIR$/../java-lang/docs/index-all.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../java-lang/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/docs/legal/COPYRIGHT" beforeDir="false" afterPath="$PROJECT_DIR$/../java-lang/docs/legal/COPYRIGHT" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/docs/legal/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/../java-lang/docs/legal/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/docs/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../java-lang/docs/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/docs/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/../java-lang/docs/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../java-lang/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/list/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/list/src/main/java/org/example/list/LinkedList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/list/src/test/java/org/example/list/LinkedListTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/utilities/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/utilities/src/main/java/org/example/utilities/JoinUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/utilities/src/main/java/org/example/utilities/SplitUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-lang/utilities/src/main/java/org/example/utilities/StringUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../myapp/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app-client/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../myapp/app-client/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app-client/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../myapp/app-client/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app-client/docs/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../myapp/app-client/docs/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app-client/docs/ddl.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../myapp/app-client/docs/ddl.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app-client/src/main/java/bitcamp/myapp/ClientApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../myapp/app-client/src/main/java/bitcamp/myapp/ClientApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app-client/src/main/java/bitcamp/myapp/TestApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app-client/src/main/java/bitcamp/myapp/command/HelpCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../myapp/app-server/src/main/java/bitcamp/myapp/command/HelpCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app-client/src/main/java/bitcamp/myapp/command/HistoryCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app-client/src/main/java/bitcamp/myapp/command/board/BoardAddCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../myapp/app-server/src/main/java/bitcamp/myapp/command/board/BoardAddCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app-client/src/main/java/bitcamp/myapp/command/board/BoardDeleteCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app-client/src/main/java/bitcamp/myapp/command/board/BoardListCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../myapp/app-server/src/main/java/bitcamp/myapp/command/board/BoardListCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app-client/src/main/java/bitcamp/myapp/command/board/BoardUpdateCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../myapp/app-server/src/main/java/bitcamp/myapp/command/board/BoardUpdateCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app-client/src/main/java/bitcamp/myapp/command/board/BoardViewCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../myapp/app-server/src/main/java/bitcamp/myapp/command/board/BoardViewCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app-client/src/main/java/bitcamp/myapp/command/project/ProjectAddCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app-client/src/main/java/bitcamp/myapp/command/project/ProjectDeleteCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../myapp/app-server/src/main/java/bitcamp/myapp/command/project/ProjectDeleteCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app-client/src/main/java/bitcamp/myapp/command/project/ProjectListCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../myapp/app-server/src/main/java/bitcamp/myapp/command/project/ProjectListCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app-client/src/main/java/bitcamp/myapp/command/project/ProjectMemberHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app-client/src/main/java/bitcamp/myapp/command/project/ProjectUpdateCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app-client/src/main/java/bitcamp/myapp/command/project/ProjectViewCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app-client/src/main/java/bitcamp/myapp/command/user/UserAddCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../myapp/app-server/src/main/java/bitcamp/myapp/command/user/UserAddCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app-client/src/main/java/bitcamp/myapp/command/user/UserDeleteCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../myapp/app-server/src/main/java/bitcamp/myapp/command/user/UserDeleteCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app-client/src/main/java/bitcamp/myapp/command/user/UserListCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../myapp/app-server/src/main/java/bitcamp/myapp/command/user/UserListCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app-client/src/main/java/bitcamp/myapp/command/user/UserUpdateCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../myapp/app-server/src/main/java/bitcamp/myapp/command/user/UserUpdateCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app-client/src/main/java/bitcamp/myapp/command/user/UserViewCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/../myapp/app-server/src/main/java/bitcamp/myapp/command/user/UserViewCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app-client/src/main/java/bitcamp/myapp/dao/BoardDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app-client/src/main/java/bitcamp/myapp/dao/ProjectDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app-client/src/main/java/bitcamp/myapp/dao/UserDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app-client/src/main/java/bitcamp/myapp/dao/mysql/BoardDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app-client/src/main/java/bitcamp/myapp/dao/mysql/ProjectDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app-client/src/main/java/bitcamp/myapp/dao/mysql/UserDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app-client/src/main/java/bitcamp/myapp/listener/InitApplicationListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app-client/src/main/java/bitcamp/myapp/vo/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/../myapp/app-server/src/main/java/bitcamp/myapp/vo/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app-client/src/main/java/bitcamp/myapp/vo/Project.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app-client/src/main/java/bitcamp/myapp/vo/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app-common/src/main/java/bitcamp/command/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/../myapp/app-common/src/main/java/bitcamp/command/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app-common/src/main/java/bitcamp/listener/ApplicationListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../myapp/app-common/src/main/java/bitcamp/listener/ApplicationListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app-common/src/main/java/bitcamp/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/../myapp/app-common/src/main/java/bitcamp/menu/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app-common/src/main/java/bitcamp/menu/MenuGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/../myapp/app-common/src/main/java/bitcamp/menu/MenuGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app-common/src/main/java/bitcamp/menu/MenuItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/../myapp/app-common/src/main/java/bitcamp/menu/MenuItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app-common/src/main/java/bitcamp/menu/TestMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp/app-common/src/main/java/bitcamp/util/Prompt.java" beforeDir="false" afterPath="$PROJECT_DIR$/../myapp/app-common/src/main/java/bitcamp/net/Prompt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp3/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp3/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp3/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp3/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp3/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp3/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp3/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp3/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp3/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp3/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp3/app/src/main/java/bitcamp/myapp3/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp3/gradle/libs.versions.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp3/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp3/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp3/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp3/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../myapp3/settings.gradle" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="myapp2" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="myapp2" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="myapp2" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2l2ZXTR0unWu29OpLR6tpbO7Ser" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.myapp2 [run].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/kim/git/bitcamp-mystudy/myapp2/settings.gradle"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="myapp2 [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="run" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.myapp2 [run]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="c8b87a5b-7d8d-4183-a9ab-e75efad8ad47" name="변경" comment="" />
+      <created>1724380170382</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1724380170382</updated>
+    </task>
+    <servers />
+  </component>
+</project>
