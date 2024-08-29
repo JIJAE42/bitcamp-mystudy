@@ -1,14 +1,14 @@
-// 0) 패턴 적용 전
-// 1) private 생성자 + Factory Method 설계 패턴
-// 2) Abstract Factory 설계 패턴
-// 3) Abstract Factory 설계 패턴 + 인터페이스
-
+// 1) 패턴 적용 전
+// 2) private 생성자 + Factory Method 설계 패턴
+// 3) Abstract Factory 설계 패턴
+// 4) Abstract Factory 설계 패턴 + 인터페이스
+//
 package study.patterns.ex01;
 
-import study.patterns.ex01.step3.Car;
-import study.patterns.ex01.step3.CarFactory;
-import study.patterns.ex01.step3.K7Factory;
-import study.patterns.ex01.step3.SonataFactory;
+import study.patterns.ex01.step4.Car;
+import study.patterns.ex01.step4.CarFactory;
+import study.patterns.ex01.step4.K7Factory;
+import study.patterns.ex01.step4.SonataFactory;
 
 public class Test04 {
   public static void main(String[] args) {
@@ -17,12 +17,10 @@ public class Test04 {
 
     printCar(sonataFactory);
     printCar(k7Factory);
-
-
   }
 
   static void printCar(CarFactory carFactory) {
-    Car car = carFactory.createCar();// CarFactory 객체 사용 규칙에 따라 메서드 실행
+    Car car = carFactory.createCar(); // CarFactory 사용 규칙에 따라 메서드 실행
     System.out.println(car);
   }
 }

@@ -1,7 +1,6 @@
 package study.patterns.ex02.after1;
 
-public class Printer5{
-
+public class Printer5 {
 
   Printer origin = new Printer();
   String sign;

@@ -5,5 +5,4 @@ public class Test01 {
     ContentPrinter printer = new ContentPrinter();
     printer.print("안녕하세요!");
   }
-
 }

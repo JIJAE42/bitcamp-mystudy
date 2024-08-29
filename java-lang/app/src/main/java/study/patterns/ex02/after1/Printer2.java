@@ -1,6 +1,6 @@
 package study.patterns.ex02.after1;
 
-public class Printer2{
+public class Printer2 {
 
   Printer origin = new Printer();
   String header;
@@ -10,8 +10,7 @@ public class Printer2{
   }
 
   void print(String content) {
-    System.out.printf("[ %s ]--------------------\n", header);
-
+    System.out.printf("[ %s ]--------------\n", header);
     origin.print(content);
   }
 }

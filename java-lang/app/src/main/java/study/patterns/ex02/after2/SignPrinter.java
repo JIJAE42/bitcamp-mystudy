@@ -1,7 +1,6 @@
 package study.patterns.ex02.after2;
 
-public class SignPrinter extends PrinterDecorator{
-
+public class SignPrinter extends PrinterDecorator {
 
   String sign;
 

@@ -1,7 +1,6 @@
 package study.patterns.ex02.before;
 
-public class Printer6 extends Printer5{
-
+public class Printer6 extends Printer5 {
 
   String header;
 
@@ -9,9 +8,10 @@ public class Printer6 extends Printer5{
     super(sign);
     this.header = header;
   }
+
   @Override
   void print(String content) {
-    System.out.printf("[ %s ]--------------------\n", header);
+    System.out.printf("[ %s ]--------------\n", header);
     super.print(content);
   }
 }

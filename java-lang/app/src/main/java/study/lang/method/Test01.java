@@ -6,6 +6,7 @@ public class Test01 {
     m1();
     m1();
   }
+
   // 메서드 정의
   static void m1() {
     System.out.println("Hello!");

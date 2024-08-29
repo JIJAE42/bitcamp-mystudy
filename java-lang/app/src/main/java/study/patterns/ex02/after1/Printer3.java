@@ -12,6 +12,6 @@ public class Printer3 {
 
   void print(String content) {
     origin.print(content);
-    System.out.printf("======== %s ========\n", footer);
+    System.out.printf("========== %s ==========\n", footer);
   }
 }

@@ -1,16 +1,8 @@
 package study.patterns.ex01.step2;
 
-
-
-public class Sedan extends Car{
+public class Sedan extends Car {
   boolean sunroof;
   boolean auto;
-
-
-
-
-
-
 
   @Override
   public String toString() {
@@ -18,12 +10,9 @@ public class Sedan extends Car{
         + ", cc=" + cc + "]";
   }
 
-
-
-
-
   private Sedan() {}
 
+  // Factory Method
   public static Sedan create(String model) {
     Sedan s = new Sedan();
 
@@ -33,22 +22,16 @@ public class Sedan extends Car{
         s.model = "소나타";
         s.cc = 1998;
         s.auto = true;
-        s.sunroof = true;
+        s.sunroof = false;
         break;
-
-      case "k7":
+      case "K7":
         s.maker = "기아자동차";
-        s.model = "k7";
+        s.model = "K7";
         s.cc = 2500;
         s.auto = true;
         s.sunroof = true;
         break;
     }
-    return null;
+    return s;
   }
 }
-
-
-
-
-

@@ -1,9 +1,8 @@
 package study.patterns.ex01.step3;
 
-public class Sedan extends Car{
+public class Sedan extends Car {
   boolean sunroof;
   boolean auto;
-
 
   @Override
   public String toString() {
@@ -12,12 +11,4 @@ public class Sedan extends Car{
   }
 
   protected Sedan() {}
-
-
 }
-
-
-
-
-
-

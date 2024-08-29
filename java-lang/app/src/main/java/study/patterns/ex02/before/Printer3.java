@@ -1,7 +1,6 @@
 package study.patterns.ex02.before;
 
-public class Printer3 extends Printer2{
-
+public class Printer3 extends Printer2 {
 
   String footer;
 
@@ -9,9 +8,10 @@ public class Printer3 extends Printer2{
     super(header);
     this.footer = footer;
   }
+
   @Override
   void print(String content) {
     super.print(content);
-    System.out.printf("======== %s ========\n", footer);
+    System.out.printf("========== %s ==========\n", footer);
   }
 }

@@ -10,5 +10,4 @@ public class Test02 {
   static void m1(String name, int age) {
     System.out.printf("%s(%d)님 반갑습니다.\n", name, age);
   }
-
 }

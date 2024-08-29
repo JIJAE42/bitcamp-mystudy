@@ -9,10 +9,10 @@ public class Test10 {
     System.out.println(values[0]);
     System.out.println(values[1]);
     System.out.println(values[2]);
-
   }
-  static int [] create() {
+
+  static int[] create() {
     int[] arr = new int[] {100, 200, 300};
-    return  arr;
+    return arr;
   }
 }

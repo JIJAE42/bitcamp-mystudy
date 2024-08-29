@@ -1,7 +1,6 @@
 package study.patterns.ex02.after2;
 
-public class FooterPrinter extends PrinterDecorator{
-
+public class FooterPrinter extends PrinterDecorator {
 
   String footer;
 
@@ -13,6 +12,6 @@ public class FooterPrinter extends PrinterDecorator{
   @Override
   public void print(String content) {
     origin.print(content);
-    System.out.printf("======== %s ========\n", footer);
+    System.out.printf("========== %s ==========\n", footer);
   }
 }

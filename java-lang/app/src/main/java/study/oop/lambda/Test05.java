@@ -14,18 +14,32 @@ public class Test05 {
   }
 
   public static void main(String[] args) {
-    class My implements Calculator {
+
+    class $1 implements Calculator {
       @Override
       public int compute(int x, int y) {
         return MyCalculator.plus(x, y);
       }
     }
-    My obj = new My();
-    int result = obj.compute(100,200);
+    Calculator obj0 = new $1();
+
+    Calculator obj = MyCalculator::plus;
+
+    int result = obj.compute(100, 200);
     System.out.println(result);
-
-
-
-
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

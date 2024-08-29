@@ -10,5 +10,4 @@ public class Test09 {
   static void m1(int[] values) {
     values[0] = 200;
   }
-
 }

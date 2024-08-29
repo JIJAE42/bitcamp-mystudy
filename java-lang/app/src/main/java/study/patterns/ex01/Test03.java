@@ -1,6 +1,7 @@
-// 0) 패턴 적용 전
-// 1) private 생성자 + Factory Method 설계 패턴
-// 2
+// 1) 패턴 적용 전
+// 2) private 생성자 + Factory Method 설계 패턴
+// 3) Abstract Factory 설계 패턴
+//
 package study.patterns.ex01;
 
 import study.patterns.ex01.step3.Car;
@@ -15,8 +16,6 @@ public class Test03 {
 
     printCar(sonataFactory);
     printCar(k7Factory);
-
-
   }
 
   static void printCar(CarFactory carFactory) {

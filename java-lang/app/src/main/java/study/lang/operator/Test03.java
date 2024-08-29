@@ -5,9 +5,12 @@ package study.lang.operator;
 //
 // 학습 내용
 // - 같은 타입끼리만 연산할 수 있다.
-// - 타입이 다르면 컴파일러는 같은 타입으로 자동 변환한다.(implicit type conversion) --암시적 형변
-// (byte, char, short) --> int로 변환 --> long --> float -->double
+// - 타입이 다르면 컴파일러는 같은 타입으로 자동 변환한다.(implicit type conversion)
+// (byte,char,short) --> int --> long --> float --> double
+//
 // - 개발자가 명시적으로 타입을 변환할 수 있다. (explicit type conversion)
+//
+//
 
 public class Test03 {
   public static void main(String[] args) {
@@ -19,12 +22,12 @@ public class Test03 {
     float f = 6.0f;
     double d = 7.0;
 
-    int b3 = b + c + s;
+    int r = b + c + s;
+
     long r2 = i + l;
 
-    // long r3 = f; -- error
-    float r4 = l; // 값이 짤릴 수 있다.(error가 안뜨기 때문에 치명적이다.)
-
+    // long r3 = f;
+    float r4 = l; // 값이 짤릴 수 있다.
 
 
   }

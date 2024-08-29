@@ -4,5 +4,4 @@ public class Printer {
   void print(String content) {
     System.out.println(content);
   }
-
 }

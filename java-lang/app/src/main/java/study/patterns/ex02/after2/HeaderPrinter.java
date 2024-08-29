@@ -1,9 +1,8 @@
 package study.patterns.ex02.after2;
 
-public class HeaderPrinter extends PrinterDecorator{
+public class HeaderPrinter extends PrinterDecorator {
 
   String header;
-
 
   public HeaderPrinter(Printer printer, String header) {
     super(printer);
@@ -12,7 +11,7 @@ public class HeaderPrinter extends PrinterDecorator{
 
   @Override
   public void print(String content) {
-    System.out.printf("[ %s ]--------------------\n", header);
+    System.out.printf("[ %s ]--------------\n", header);
     origin.print(content);
   }
 }
