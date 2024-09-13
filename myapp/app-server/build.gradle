@@ -7,8 +7,6 @@ repositories {
 }
 
 dependencies {
-    implementation project(':app-common')
-
     // JDBC Driver
     implementation 'com.mysql:mysql-connector-j:8.4.0'
     //implementation 'com.google.code.gson:gson:2.11.0'
@@ -19,6 +17,8 @@ dependencies {
     // Tomcat Embedded Server 라이브러리
     implementation 'org.apache.tomcat.embed:tomcat-embed-jasper:9.0.93'
 
+    // JSTL API 및 구현체 라이브러리
+    implementation 'javax.servlet:jstl:1.2'
 
     testImplementation libs.junit.jupiter
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'

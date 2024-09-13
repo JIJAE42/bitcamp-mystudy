@@ -1,64 +1,79 @@
 package bitcamp.myapp.servlet.board;
 
-import bitcamp.myapp.dao.BoardDao;
+import bitcamp.myapp.service.BoardService;
+import bitcamp.myapp.vo.AttachedFile;
 import bitcamp.myapp.vo.Board;
 import bitcamp.myapp.vo.User;
-import org.apache.ibatis.session.SqlSessionFactory;
 
-import javax.servlet.*;
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.Part;
 import java.io.IOException;
-import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.UUID;
+
 
 @WebServlet("/board/add")
-public class BoardAddServlet extends GenericServlet {
+public class BoardAddServlet extends HttpServlet {
 
-    private BoardDao boardDao;
-    private SqlSessionFactory sqlSessionFactory;
+  private BoardService boardService;
+  private String uploadDir;
 
-    @Override
-    public void init() throws ServletException {
-        ServletContext ctx = this.getServletContext();
-        this.boardDao = (BoardDao) ctx.getAttribute("boardDao");
-        this.sqlSessionFactory = (SqlSessionFactory) ctx.getAttribute("sqlSessionFactory");
-    }
+  @Override
+  public void init() throws ServletException {
+    ServletContext ctx = this.getServletContext();
+    this.boardService = (BoardService) ctx.getAttribute("boardService");
+    this.uploadDir = ctx.getRealPath("/upload/board");
+  }
 
-    @Override
-    public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
-        res.setContentType("text/html;charset=UTF-8");
-        PrintWriter out = res.getWriter();
+  @Override
+  protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+    req.setAttribute("viewName", "/board/form.jsp");
+  }
 
-        req.getRequestDispatcher("/header").include(req, res);
+  @Override
+  protected void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+    try {
+      User loginUser = (User) ((HttpServletRequest) req).getSession().getAttribute("loginUser");
+      if (loginUser == null) {
+        throw new Exception("로그인 하지 않았습니다.");
+      }
 
-        try {
+      Board board = new Board();
+      board.setWriter(loginUser);
+      board.setTitle(req.getParameter("title"));
+      board.setContent(req.getParameter("content"));
 
-            out.println("<h1>게시글 등록 결과</h1>");
+      ArrayList<AttachedFile> attachedFiles = new ArrayList<>();
 
-            Board board = new Board();
-            board.setTitle(req.getParameter("title"));
-            board.setContent(req.getParameter("content"));
-
-            // 클라이언트 전용 보관소에서 로그인 사용자 정보를 꺼낸다.
-            User loginUser = (User) ((HttpServletRequest) req).getSession().getAttribute("loginUser");
-            board.setWriter(loginUser);
-
-            boardDao.insert(board);
-            sqlSessionFactory.openSession(false).commit();
-            out.println("<p>등록 성공입니다.</p>");
-
-        } catch (Exception e) {
-            sqlSessionFactory.openSession(false).rollback();
-            out.println("<p>등록 중 오류 발생!</p>");
-            e.printStackTrace();
+      Collection<Part> parts = req.getParts();
+      for (Part part : parts) {
+        if (!part.getName().equals("files") || part.getSize() == 0) {
+          continue;
         }
 
-        out.println("</body>");
-        out.println("</html>");
+        AttachedFile attachedFile = new AttachedFile();
+        attachedFile.setFilename(UUID.randomUUID().toString());
+        attachedFile.setOriginFilename(part.getSubmittedFileName());
 
-        ((HttpServletResponse) res).setHeader("Refresh", "1;url=/board/list");
+        part.write(this.uploadDir + "/" + attachedFile.getFilename());
 
+        attachedFiles.add(attachedFile);
+      }
+
+      board.setAttachedFiles(attachedFiles);
+
+      boardService.add(board);
+      req.setAttribute("viewName", "redirect:list");
+
+    } catch (Exception e) {
+      req.setAttribute("exception", e);
     }
+  }
 
 }
